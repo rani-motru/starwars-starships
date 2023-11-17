@@ -34,11 +34,11 @@ export default function App() {
   return (
    
    <div>
-     <header style={{ position:'fixed',top:'0',left:'0',right:'0',border: '1px solid #ccc', padding: '5px', margin: '5px', borderRadius: '8px' , backgroundColor:'gray',textAlign:'center'}}>
+     <header style={{ position:'fixed',top:'0',left:'0',right:'0',border: '1px solid black', padding: '5px', margin: '5px', borderRadius: '8px' , backgroundColor:'black',textAlign:'center',color:'white'}}>
       <h2>Star Wars Starships</h2></header>
       <div className = "card-container">
       {ship.map((card, index) =>(
-      <div key = {index} style={{boxSizing:'border-box', border: '1px solid #ccc', padding: '10px', margin: '10px', borderRadius: '8px' , backgroundColor:'gray',textAlign:'center',width:'calc(25% - 20px)'}}>  
+      <div key = {index} style={{boxSizing:'border-box', border: '1px solid #004d4d', padding: '10px', margin: '10px', borderRadius: '8px' , backgroundColor:'#004d4d',textAlign:'center',width:'calc(25% - 20px)',color:'white'}}>  
       <h3>{card.name}</h3>
         </div> 
         ))}
